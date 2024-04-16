@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item">
+                    <img src="logo.png" alt="SmartLiving Logo" height="50">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarContent" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#home" class="navbar-item">Home</a>
+                    <a href="#features" class="navbar-item">Features</a>
+                    <a href="#about" class="navbar-item">About</a>
+                    <a href="#security" class="navbar-item">Security</a>
+                    <a href="service.html" class="navbar-item">Services</a>
+                    <a href="product.html" class="navbar-item">Products</a>
+                    <a href="cart.html" class="navbar-item">Cart</a>
+                    <a href="login.html" class="navbar-item">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero is-primary is-bold" id="home">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title" >Welcome to Smart Home Management</h1>
+                    <h2 class="subtitle">Control your home's devices with ease and efficiency.</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="title">About Our Smart Home System</h2>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <img src="advance.webp" alt="Tech Illustration">
+                    </div>
+                    <div class="column">
+                        <p>Our Smart Home System brings convenience and efficiency to your fingertips. Easily manage your home's lighting, temperature, and security with a user-friendly interface designed for everyone. Customize settings to fit your daily schedule, ensuring your home is always as welcoming as you desire. Not only does this system improve your quality of life, but it also offers significant energy savings, reducing your carbon footprint and lowering utility bills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="security">
+            <div class="container">
+                <h2 class="title">Smart Security</h2>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <img src="house.gif" alt="Security Camera">
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <h3>Motion Detection</h3>
+                            <p>Receive real-time alerts when movement is detected.</p>
+                            <h3>Door & Window Sensors</h3>
+                            <p>Get instant notifications when doors or windows are opened. Perfect for keeping your home safe, whether you're at home or away.</p>
+                            <h3>Real-Time Surveillance</h3>
+                            <p>Access live video feeds from your home's security cameras anytime, anywhere. Ensure peace of mind with high-definition surveillance at your fingertips.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <h2 class="title">Device Control</h2>
+                <div class="columns is-multiline">
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title">Living Room Lights</h3>
+                                <button class="button is-primary is-outlined" data-device="light" onclick="toggleDevice(this)">Off</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title">Thermostat</h3>
+                                <p class="subtitle temp-display">22°C</p>
+                                <div class="buttons">
+                                    <button class="button is-primary is-outlined" data-device="thermostat" onclick="updateTemp(this, 1)">+</button>
+                                    <button class="button is-primary is-outlined" data-device="thermostat" onclick="updateTemp(this, -1)">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title">Smart Door Lock</h3>
+                                <button class="button is-primary is-outlined" data-device="door-lock" onclick="toggleDevice(this)">Locked</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 SmartLiving. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item">
+                    <img src="logo.png" alt="SmartLiving Logo" height="50">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarContent" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="product.html" class="navbar-item">Products</a>
+                    <a href="cart.html" class="navbar-item">Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Shopping Cart</h1>
+            <div class="cart-items" id="cart-items">
+                <!-- Display items added to the cart -->
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 SmartLiving. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

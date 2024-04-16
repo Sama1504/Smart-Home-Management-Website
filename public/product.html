@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item">
+                    <img src="logo.png" alt="SmartLiving Logo" height="50">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarContent" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="product.html" class="navbar-item">Products</a>
+                    <a href="cart.html" class="navbar-item">Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Our Products</h1>
+                <div class="columns is-multiline">
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="smart_light_bulb.jpg" alt="Smart Light Bulb">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4">Smart Light Bulb</h2>
+                                <p>Control your home's lighting with ease using our smart light bulbs.</p>
+                                <button class="button is-primary is-outlined" onclick="addToCart('Smart Light Bulb')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="smart_thermostat.jpg" alt="Smart Thermostat">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4">Smart Thermostat</h2>
+                                <p>Efficiently manage your home's temperature and save energy with our smart thermostat.</p>
+                                <button class="button is-primary is-outlined" onclick="addToCart('Smart Thermostat')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="smart_door_lock.jpg" alt="Smart Door Lock">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4">Smart Door Lock</h2>
+                                <p>Enhance your home's security with our smart door lock, accessible from anywhere.</p>
+                                <button class="button is-primary is-outlined" onclick="addToCart('Smart Door Lock')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 SmartLiving. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
